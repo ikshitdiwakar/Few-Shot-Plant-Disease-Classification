@@ -1,0 +1,19 @@
+{
+    "project": "Few-Shot Plant Disease Classification & Localization",
+    "backbone": "DeiT-Small (Patch-Token Extractor)",
+    "classification_setup": "Prototypical Networks + Cosine Distance",
+    "evaluation_protocols": {
+        "classification": "600 Fixed Evaluation Episodes (Novel Classes)",
+        "localization": "PlantSeg Pixel-Level Disease Masks"
+    },
+    "key_metrics": {
+        "step_4_classification": {
+            "best_model": "DeiT-Small (patch mean) + cosine distance",
+            "status": "Completed & Verified across 600 episodes"
+        },
+        "step_5_localization": {
+            "pointing_game_accuracy": "20.0%",
+            "mean_iou_top20_threshold": "11.9%"
+        }
+    }
+}
